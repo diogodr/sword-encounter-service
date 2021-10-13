@@ -1,0 +1,19 @@
+{
+  "version": 2,
+  "dgSpecHash": "JNlwT/Cg91wNsQVo3Nl3SavYUX+BraPjjAkLRIxBXXJW35Z3moXyEWmv9DAfpmI/Tr7ysaK+GrZ0FTykUxKhMg==",
+  "success": true,
+  "projectFilePath": "C:\\Users\\Diogo Rosa\\OneDrive\\Área de Trabalho\\sword-encounter-service\\sword-encounter-service\\sword-encounter-service.csproj",
+  "expectedPackageFiles": [
+    "C:\\Users\\Diogo Rosa\\.nuget\\packages\\dnsclient\\1.4.0\\dnsclient.1.4.0.nupkg.sha512",
+    "C:\\Users\\Diogo Rosa\\.nuget\\packages\\microsoft.netcore.platforms\\2.1.2\\microsoft.netcore.platforms.2.1.2.nupkg.sha512",
+    "C:\\Users\\Diogo Rosa\\.nuget\\packages\\mongodb.bson\\2.13.1\\mongodb.bson.2.13.1.nupkg.sha512",
+    "C:\\Users\\Diogo Rosa\\.nuget\\packages\\mongodb.driver\\2.13.1\\mongodb.driver.2.13.1.nupkg.sha512",
+    "C:\\Users\\Diogo Rosa\\.nuget\\packages\\mongodb.driver.core\\2.13.1\\mongodb.driver.core.2.13.1.nupkg.sha512",
+    "C:\\Users\\Diogo Rosa\\.nuget\\packages\\mongodb.libmongocrypt\\1.2.2\\mongodb.libmongocrypt.1.2.2.nupkg.sha512",
+    "C:\\Users\\Diogo Rosa\\.nuget\\packages\\sharpcompress\\0.23.0\\sharpcompress.0.23.0.nupkg.sha512",
+    "C:\\Users\\Diogo Rosa\\.nuget\\packages\\system.buffers\\4.5.1\\system.buffers.4.5.1.nupkg.sha512",
+    "C:\\Users\\Diogo Rosa\\.nuget\\packages\\system.runtime.compilerservices.unsafe\\5.0.0\\system.runtime.compilerservices.unsafe.5.0.0.nupkg.sha512",
+    "C:\\Users\\Diogo Rosa\\.nuget\\packages\\system.text.encoding.codepages\\4.5.1\\system.text.encoding.codepages.4.5.1.nupkg.sha512"
+  ],
+  "logs": []
+}
