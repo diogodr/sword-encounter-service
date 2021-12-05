@@ -1,0 +1,13 @@
+<?xml version="1.0"?>
+<doc>
+    <assembly>
+        <name>sword-encounter-service</name>
+    </assembly>
+    <members>
+        <member name="M:sword_encounter_service.Controllers.UsersController.Get">
+            <summary>
+            Lista todos os usuários cadastrados na plataforma
+            </summary>
+        </member>
+    </members>
+</doc>

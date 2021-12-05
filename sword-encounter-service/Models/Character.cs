@@ -1,6 +1,8 @@
 ﻿using System;
 using MongoDB.Bson;
+using System.Collections.Generic;
 using MongoDB.Bson.Serialization.Attributes;
+using System.ComponentModel.DataAnnotations;
 
 namespace sword_encounter_service.Models
 {
@@ -9,7 +11,10 @@ namespace sword_encounter_service.Models
         [BsonId]
         [BsonRepresentation(BsonType.ObjectId)]
         public string Id { get; set; }
-        public string Email { get; set; }
+        [Required]
+        public string CampaignId { get; set; }
+        public string PlayerId { get; set; }
+        public List<CharacterAttribute> Attributes { get; set; }
         public DateTime CreatedAt { get; set; } = DateTime.Now;
         public DateTime UpdatedAt { get; set; } = DateTime.Now;
     }
