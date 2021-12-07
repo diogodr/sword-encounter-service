@@ -22,6 +22,10 @@ namespace sword_encounter_service.Controllers
         public ActionResult<List<Campaign>> Get() =>
             _campaignService.Get();
 
+        [HttpGet("user/{userId}")]
+        public ActionResult<List<Campaign>> ListByUser(string userId) =>
+            _campaignService.GetByUser(userId);
+
         [HttpGet("{id:length(24)}", Name = "GetCampaign")]
         public ActionResult<Campaign> Get(string id)
         {
