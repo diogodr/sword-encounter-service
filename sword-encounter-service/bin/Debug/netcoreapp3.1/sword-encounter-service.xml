@@ -4,6 +4,11 @@
         <name>sword-encounter-service</name>
     </assembly>
     <members>
+        <member name="M:sword_encounter_service.Controllers.GameController.Get(System.String)">
+            <summary>
+            Traz informações para o game
+            </summary>
+        </member>
         <member name="M:sword_encounter_service.Controllers.UsersController.Get">
             <summary>
             Lista todos os usuários cadastrados na plataforma

@@ -14,6 +14,7 @@ namespace sword_encounter_service.Models
         public string Id { get; set; }
         public string Name { get; set; }
         public string MasterId { get; set; }
+        public List<string> Maps { get; set; } = new List<string>();
         public List<CampaignAttribute> Attributes { get; set; }
         public DateTime CreatedAt { get; set; } = DateTime.Now;
         public DateTime UpdatedAt { get; set; } = DateTime.Now;

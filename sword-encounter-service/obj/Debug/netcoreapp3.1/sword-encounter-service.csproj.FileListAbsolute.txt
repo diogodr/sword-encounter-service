@@ -37,5 +37,5 @@ C:\Users\Diogo Rosa\OneDrive\Área de Trabalho\sword-encounter-service\sword-enc
 C:\Users\Diogo Rosa\OneDrive\Área de Trabalho\sword-encounter-service\sword-encounter-service\obj\Debug\netcoreapp3.1\sword-encounter-service.MvcApplicationPartsAssemblyInfo.cs
 C:\Users\Diogo Rosa\OneDrive\Área de Trabalho\sword-encounter-service\sword-encounter-service\obj\Debug\netcoreapp3.1\sword-encounter-service.MvcApplicationPartsAssemblyInfo.cache
 C:\Users\Diogo Rosa\OneDrive\Área de Trabalho\sword-encounter-service\sword-encounter-service\bin\Debug\netcoreapp3.1\Properties\launchSettings.json
-C:\Users\Diogo Rosa\OneDrive\Área de Trabalho\sword-encounter-service\sword-encounter-service\obj\Debug\netcoreapp3.1\sword-encounter-service.csprojAssemblyReference.cache
 C:\Users\Diogo Rosa\OneDrive\Área de Trabalho\sword-encounter-service\sword-encounter-service\obj\Debug\netcoreapp3.1\sword-encounter-service.csproj.CopyComplete
+C:\Users\Diogo Rosa\OneDrive\Área de Trabalho\sword-encounter-service\sword-encounter-service\obj\Debug\netcoreapp3.1\sword-encounter-service.csprojAssemblyReference.cache

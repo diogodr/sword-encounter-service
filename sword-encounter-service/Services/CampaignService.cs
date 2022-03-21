@@ -31,8 +31,9 @@ namespace sword_encounter_service.Services
                 .Find(character => character.PlayerId == userId).ToList();
 
             var filter = Builders<Campaign>.Filter.In(x => x.Id, characters.Select(c => c.CampaignId).ToList());
+            var filter2 = Builders<Campaign>.Filter.Eq(x => x.MasterId, userId);
 
-            var campaigns = _campaigns.Find(filter).ToList();
+            var campaigns = _campaigns.Find(filter | filter2).ToList();
 
             return campaigns;
         }
@@ -49,6 +50,13 @@ namespace sword_encounter_service.Services
 
         public void Update(string id, Campaign campaignIn) =>
             _campaigns.ReplaceOne(campaign => campaign.Id == id, campaignIn);
+
+        public void AddMap(string id, string map)
+        {
+            var newCampaign = _campaigns.Find<Campaign>(campaign => campaign.Id == id).FirstOrDefault();
+            newCampaign.Maps.Add(map);
+            _campaigns.ReplaceOne(character => character.Id == id, newCampaign);
+        }
 
         public void Remove(Campaign campaignIn) =>
             _campaigns.DeleteOne(campaign => campaign.Id == campaignIn.Id);

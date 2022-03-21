@@ -15,6 +15,8 @@ namespace sword_encounter_service.Models
         public string CampaignId { get; set; }
         public string PlayerId { get; set; }
         public List<CharacterAttribute> Attributes { get; set; }
+        public List<DiceRoll> DiceRolls { get; set; } = new List<DiceRoll>();
+        public List<Position> Positions { get; set; } = new List<Position>();
         public DateTime CreatedAt { get; set; } = DateTime.Now;
         public DateTime UpdatedAt { get; set; } = DateTime.Now;
     }

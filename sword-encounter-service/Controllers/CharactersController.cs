@@ -57,6 +57,36 @@ namespace sword_encounter_service.Controllers
             return NoContent();
         }
 
+        [HttpPut("{id:length(24)}/add-dice")]
+        public IActionResult AddDice(string id, DiceRoll dice)
+        {
+            var character = _characterService.Get(id);
+
+            if (character == null)
+            {
+                return NotFound();
+            }
+
+            _characterService.AddDice(id, dice);
+
+            return NoContent();
+        }
+
+        [HttpPut("{id:length(24)}/add-position")]
+        public IActionResult AddPosition(string id, Position position)
+        {
+            var character = _characterService.Get(id);
+
+            if (character == null)
+            {
+                return NotFound();
+            }
+
+            _characterService.AddPosition(id, position);
+
+            return NoContent();
+        }
+
         [HttpDelete("{id:length(24)}")]
         public IActionResult Delete(string id)
         {

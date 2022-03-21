@@ -24,6 +24,16 @@ namespace sword_encounter_service.Services
         public Character Get(string id) =>
             _characters.Find<Character>(character => character.Id == id).FirstOrDefault();
 
+        public List<Character> GetByCampaign(string idCampanha)
+        {
+            var filter = Builders<Character>.Filter.Eq(x => x.CampaignId, idCampanha);
+
+            var characters = _characters.Find(filter).ToList();
+
+            return characters;
+        }
+    
+
         public Character Create(Character character)
         {
             _characters.InsertOne(character);
@@ -32,6 +42,21 @@ namespace sword_encounter_service.Services
 
         public void Update(string id, Character characterIn) =>
             _characters.ReplaceOne(character => character.Id == id, characterIn);
+
+        public void AddDice(string id, DiceRoll dice)
+        {
+            var newCharacter = _characters.Find<Character>(character => character.Id == id).FirstOrDefault();
+            newCharacter.DiceRolls.Add(dice);
+            _characters.ReplaceOne(character => character.Id == id, newCharacter);
+        }
+
+        public void AddPosition(string id, Position position)
+        {
+            var newCharacter = _characters.Find<Character>(character => character.Id == id).FirstOrDefault();
+            newCharacter.Positions.Add(position);
+            _characters.ReplaceOne(character => character.Id == id, newCharacter);
+        }
+
 
         public void Remove(Character characterIn) =>
             _characters.DeleteOne(character => character.Id == characterIn.Id);

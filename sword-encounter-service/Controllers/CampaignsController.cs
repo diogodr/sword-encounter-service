@@ -62,6 +62,21 @@ namespace sword_encounter_service.Controllers
             return NoContent();
         }
 
+        [HttpPut("{id:length(24)}/add-map")]
+        public IActionResult AddMap(string id, string map)
+        {
+            var campaign = _campaignService.Get(id);
+
+            if (campaign == null)
+            {
+                return NotFound();
+            }
+
+            _campaignService.AddMap(id, map);
+
+            return NoContent();
+        }
+
         [HttpDelete("{id:length(24)}")]
         public IActionResult Delete(string id)
         {

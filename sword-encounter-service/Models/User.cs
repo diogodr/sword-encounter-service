@@ -14,9 +14,6 @@ namespace sword_encounter_service.Models
         public string Id { get; set; }
         public string Email { get; set; }
         public string Password { get; set; }
-        public string Name { get; set; }
-        public string BirthDate { get; set; }
-        public string Genery { get; set; }
         public DateTime CreatedAt { get; set; } = DateTime.Now;
     }
 }
