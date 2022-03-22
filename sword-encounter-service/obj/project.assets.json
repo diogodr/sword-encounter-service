@@ -5154,11 +5154,11 @@
   "project": {
     "version": "1.0.0",
     "restore": {
-      "projectUniqueName": "C:\\Users\\Diogo Rosa\\OneDrive\\Área de Trabalho\\sword-encounter-service\\sword-encounter-service\\sword-encounter-service.csproj",
+      "projectUniqueName": "C:\\Users\\Diogo Rosa\\projects\\sword-encounter-service\\sword-encounter-service\\sword-encounter-service.csproj",
       "projectName": "sword-encounter-service",
-      "projectPath": "C:\\Users\\Diogo Rosa\\OneDrive\\Área de Trabalho\\sword-encounter-service\\sword-encounter-service\\sword-encounter-service.csproj",
+      "projectPath": "C:\\Users\\Diogo Rosa\\projects\\sword-encounter-service\\sword-encounter-service\\sword-encounter-service.csproj",
       "packagesPath": "C:\\Users\\Diogo Rosa\\.nuget\\packages\\",
-      "outputPath": "C:\\Users\\Diogo Rosa\\OneDrive\\Área de Trabalho\\sword-encounter-service\\sword-encounter-service\\obj\\",
+      "outputPath": "C:\\Users\\Diogo Rosa\\projects\\sword-encounter-service\\sword-encounter-service\\obj\\",
       "projectStyle": "PackageReference",
       "configFilePaths": [
         "C:\\Users\\Diogo Rosa\\AppData\\Roaming\\NuGet\\NuGet.Config",
